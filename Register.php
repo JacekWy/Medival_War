@@ -10,5 +10,6 @@
 $user = $_POST["Username"];
 $password = $_POST["Password"];
 $passwordr = $_POST["RPassword"];
+$city = $_POST["City"];
 
 
