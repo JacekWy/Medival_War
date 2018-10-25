@@ -5,7 +5,7 @@ class Connect_MySql
     protected $username = "root";
     protected $password="";
     protected $base = "Login";
-    protected $connection;
+    public $connection;
 
     function __construct()
     {
@@ -14,3 +14,6 @@ class Connect_MySql
 
 
 }
+$con = new Connect_MySql();
+$connect = $con->connection;
+

@@ -12,4 +12,3 @@ $password = $_POST["Password"];
 $passwordr = $_POST["RPassword"];
 
 
-echo $user;
