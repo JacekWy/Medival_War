@@ -4,7 +4,7 @@ class Connect_MySql
     protected $host = "localhost";
     protected $username = "root";
     protected $password="";
-    protected $base = "Hello";
+    protected $base = "Login";
     protected $connection;
 
     function __construct()
