@@ -5,7 +5,9 @@
  * Date: 25.10.2018
  * Time: 22:17
  */
+
 require_once ("Connect_MySql.php");
+
 session_start();
 $user = $_SESSION['$user'];
 echo $user."</br>";
