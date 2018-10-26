@@ -1,9 +1,11 @@
 <?php
 require_once ("Connect_MySql.php");
 
-
+session_start();
 $user = $_POST["Username"];
 $password = $_POST["Password"];
+
+$_SESSION['$user'] = $user;
 
 if($connect->connect_error)
 {
@@ -16,7 +18,8 @@ if($connect->connect_error)
 
         if($row > 0){
             echo $row;
-            //header('Location: OsadnicyGame.php');
+
+            header('Location: Medival_Core.php');
         }else{
             $connect->close();
             header('Location: Form/LoginForm.html');
