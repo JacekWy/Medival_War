@@ -17,16 +17,16 @@ $result = $connect->query("select * from medival.materials as mat join medival.l
 $wood = $connect->query("select saw.Prod from medival.login as log join medival.sawmill as saw on log.Sawmill_LVL = saw.LVL where log.User = '$user'");
 
 
-if ($result->num_rows > 0){
-    while ($row = $result->fetch_assoc()){
-        echo "Wood: ". $row['Wood']."</br>";
-        echo "Stone: ".$row['Stone']."</br>";
-        echo "Food: ".$row['Food']."</br>";
-        echo "People: ".$row['People']."</br>";
-        echo "City: ".$row['City']."</br>";
-        echo "Sawmill LVL: ".$row['Sawmill_LVL']."</br>";
-    }
-}
+
+$row = $result->fetch_row();
+echo "Wood: ". $row[1]."</br>";
+echo "Stone: ".$row[2]."</br>";
+echo "Food: ".$row[3]."</br>";
+echo "People: ".$row[4]."</br>";
+echo "City: ".$row[9]."</br>";
+echo "Sawmill LVL: ".$row[10]."</br>";
+
+
 
 $roww = $wood->fetch_row();
 echo "Produkcja drzewa/min: ".$roww[0];
