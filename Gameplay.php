@@ -10,10 +10,3 @@ require_once ("Connect_MySql.php");
 
 
 
-function upgrade_sawmill(){
-    $wood;
-    $stone;
-
-}
-
-

@@ -5,3 +5,4 @@ function timer(){
     document.getElementById('clock').innerHTML = i;
     setTimeout("timer()",1000);
 }
+

@@ -1,18 +1,8 @@
+<script src="Time.js"></script>
+<button onclick="timer()">Click me</button>
+<div id = "clock"></div>
 <?php
-/**
- * Created by PhpStorm.
- * User: Jack
- * Date: 26.10.2018
- * Time: 13:19
- */
+require_once ("Connect_MySql.php");
 
-$time = date('s');
-
-echo $time.'</br>';
-
-
-if ($time == '05' ){
-    echo "Udalo sie";
-}
 
 
