@@ -1,0 +1,28 @@
+header{
+    text-align: center;
+    background-color: #b7b7b7;
+    height: 100px;
+    padding-top: 12px;
+
+}
+
+nav{
+    border-style: solid;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+    padding-left: 90px;
+    font-size: 20px;
+}
+li#city{
+    padding-left: 620px;
+}
