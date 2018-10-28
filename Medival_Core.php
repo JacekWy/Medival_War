@@ -27,7 +27,7 @@ $row = $result->fetch_row();
 
 
 
-//$roww = $wood_prod->fetch_row();
+$roww = $wood_prod->fetch_row();
 //echo "Produkcja drzewa/min: ".$roww[0];
 
 

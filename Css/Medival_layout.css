@@ -26,3 +26,14 @@ li {
 li#city{
     padding-left: 620px;
 }
+
+aside {
+    float: right;
+    margin-top: 10px;
+    width: 15%;
+    border-style: solid;
+
+}
+h2{
+    text-align: center;
+}
