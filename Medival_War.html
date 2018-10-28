@@ -6,16 +6,20 @@
     <link rel="stylesheet" type="text/css" href="Css/Medival_layout.css">
 </head>
 <body>
+<?php
+require_once ("Medival_Core.php");
+?>
 <header>
     <h1>Medival War</h1>
 </header>
 <nav>
     <ul>
-        <li>sadsa</li>
-        <li>sadsa</li>
-        <li>fdsfsdf</li>
-        <li>fdsfsdf</li>
-        <li id = "city">City</li>
+        <li>User: <?php echo $user ?></li>
+        <li>Wood: <?php echo $row[1] ?></li>
+        <li>Stone: <?php echo $row[2] ?></li>
+        <li>Food: <?php echo $row[3] ?></li>
+        <li>People: <?php echo $row[4] ?></li>
+        <li id = "city">City: <?php echo $row[9] ?></li>
     </ul>
 
 
