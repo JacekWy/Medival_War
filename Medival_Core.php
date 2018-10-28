@@ -14,7 +14,7 @@ echo $user."</br>";
 
 $result = $connect->query("select * from medival.materials as mat join medival.login as log on  mat.id = log.id where log.User = '$user'");
 
-$wood = $connect->query("select saw.Prod from medival.login as log join medival.sawmill as saw on log.Sawmill_LVL = saw.LVL where log.User = '$user'");
+$wood_prod = $connect->query("select saw.Prod from medival.login as log join medival.sawmill as saw on log.Sawmill_LVL = saw.LVL where log.User = '$user'");
 
 
 
@@ -36,7 +36,7 @@ if($row[1] > 11300) {
 
 
 
-$roww = $wood->fetch_row();
+$roww = $wood_prod->fetch_row();
 echo "Produkcja drzewa/min: ".$roww[0];
 
 

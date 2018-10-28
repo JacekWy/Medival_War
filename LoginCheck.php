@@ -19,7 +19,7 @@ if($connect->connect_error)
         if($row > 0){
             echo $row;
 
-            header('Location: Medival_Core.php');
+            header('Location: Medival_War.html');
         }else{
             $connect->close();
             header('Location: Form/LoginForm.html');
